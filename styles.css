@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Lora:wght@600;700&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 20px 15px -15px darkgray;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding-right: 30px;
+}
+nav ul li a {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  color: #1A2428;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 55%;
+}
