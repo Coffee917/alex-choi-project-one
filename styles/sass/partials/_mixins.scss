@@ -1,0 +1,78 @@
+@mixin flexCenter (){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// @mixin header($font-size, $font-weight) {
+// font-family: "Lora", sans-serif;
+// font-weight: $font-weight;
+// font-size: $font-size;
+// }
+
+// HEADER STYLES
+@mixin header($font-size){
+  font-family: $primaryFont;
+  font-size: $font-size;
+  font-weight: 900;
+  letter-spacing: 1px;
+  // line-height: 3.5rem;
+}
+@mixin subHeader($font-size){
+  font-family: $primaryFont;
+  font-size: $font-size;
+  font-weight: 700;
+  // line-height: 3.5rem;
+}
+
+// BODY TEXT STYLES
+@mixin bodyText($width) {
+  color: $black;
+  font-family: $secondaryFont;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  max-width: $width;
+}
+
+// BUTTON STYLES
+@mixin bigButton() {
+  background-color: $green;
+  color: $white;
+  border-radius: 20px;
+  height: 2.5rem;
+  width: 7.3rem;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+@mixin button() {
+  background-color: $green;
+  color: $white;
+  border-radius: 20px;
+  height: 2rem;
+  width: 6.7rem;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+@mixin miniButton(){
+  background-color: $green;
+  color: $white;
+  border-radius: 20px;
+  height: 1.6rem;
+  width: 5.9rem;
+  font-family: $secondaryFont;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+

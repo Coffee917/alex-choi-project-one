@@ -1,0 +1,43 @@
+.heroContent {
+  background-image: url(../../assets/asset/header/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 -15px 30px -23px darkgray;
+  display: flex;
+  align-items: center;
+  min-height: 93vh;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 1 45%;
+        margin: 0 auto;
+          h1 {
+            @include header(2.5rem);
+          }
+          p {
+            @include bodyText(50ch);
+            margin: 2rem 0;
+          }
+          button {
+            position: relative;
+            @include button;
+          }
+        }
+      .imageContainer {
+        flex: 0 1 55%;
+        margin: 0 auto;
+          img {
+            max-width: 100%;
+            
+          }
+      }
+  }     
+}
+    
+
+
+

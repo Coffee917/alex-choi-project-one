@@ -1,0 +1,59 @@
+.news {
+  background-color: $green;
+  background-size: 100% 55%;
+  padding-bottom: 5%;
+  .newsHeader {
+    @include flexCenter;
+    h2 {
+      @include header(1.4rem);
+      color: $white;
+      margin-top: 5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      @include bodyText(75ch);
+      color: $white;
+      margin-bottom: 3rem;
+    }
+  }
+.newsBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $green;
+  gap: 1.6rem;
+  .newsContainer {
+    background-color: $white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-basis: calc(33% - 2.9rem);
+    .imageContainer {
+      border-radius: 5px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      img {
+        width: 100%;
+      }
+    }
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        @include header(1.1rem);
+        color: $black;
+        text-align: left;
+      }
+      p {
+        @include bodyText(auto);
+        text-align: left;
+        color: $black;
+      }
+      button {
+        @include bigButton;
+      }
+    }
+  }
+}
+}

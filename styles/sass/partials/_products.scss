@@ -1,0 +1,50 @@
+// HEADER TEXT
+.productHeader {
+  @include flexCenter;
+  h2 {
+    @include header(1.4rem);
+    margin-top: 1rem;
+  }
+  p {
+    @include bodyText(60ch);
+  }
+}
+
+// PRODUCT LIST
+.veggie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  .vegBox {
+    flex-direction: column;
+    flex: 1 1 20%;
+    }
+    img {
+      max-width: 100%;
+      }
+    .vegText {
+      border: $greyBorder;
+      border-top: none;
+      padding: 1rem;
+      }
+        h3 {
+          @include subHeader(0.8rem);
+        }
+        p {
+          @include bodyText(auto)
+        }
+        .price {
+          @include bodyText(100%);
+          color: $green;
+          font-weight: 700;
+            span {
+            text-decoration: line-through;
+            }
+         }
+  }
+
+// BOTTOM BUTTON
+button {
+  @include miniButton;
+  position: absolute;
+}

@@ -1,10 +1,133 @@
-@import "./partials/"
+@import "./partials/fonts";
+@import "./partials/mixins";
+@import "./partials/nav";
+@import "./partials/heroContent";
+@import "./partials/aboutUs";
+@import "./partials/products";
+@import "./partials/gallery";
+@import "./partials/news";
+@import "./partials/footer";
 
+
+// REUSABLE STYLES
+
+html, body {
+  margin:0;
+  padding:0;
+  }
 .wrapper {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1920px;
   width: 55%;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  @include bodyText(100%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contactHeader {
+  background-image: url(../../assets/asset/contact.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 30vh;
+  @include flexCenter;
+  h1 {
+    @include subHeader(2rem);
+    color: $white;
+    font-weight: 400;
+    font-family: $primaryFont;
+  }
+}
+
+.contact {
+  .wrapper{
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    .contactInfo {
+      flex-basis: calc(49% - 3rem);
+      align-self: center;
+      .contactBox {
+        padding: 1.5rem 0 1.5rem 2.5rem;
+        margin-bottom: 2.2rem;
+        border: $greyBorder;
+        border-left: 0.6rem solid green;
+        h4 {
+          @include subHeader (1rem);
+          font-weight: 500;
+        }
+        p {
+          @include bodyText(100%);
+          font-size: 1rem;
+        }
+      }
+    }
+    .contactUs {
+      display: flex;
+      flex-basis: calc(50% - 3rem);
+      flex-wrap: wrap;
+      border: $greyBorder;
+      padding: 1.5rem;
+      gap: 1rem;
+      form {
+        flex-basis: calc(50% - 1.5rem);
+      }
+        input {
+          min-height: 2.5rem;
+          min-width: 13.4rem;
+        }
+        #subject {
+          width: 65ch;
+        }
+      }
+      .formButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          @include bigButton;
+          height: 3rem;
+          width: 9rem;
+          cursor: pointer;
+         
+        }
+      }
+      
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+  
+
+  
+
+  
+
 
 
 

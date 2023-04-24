@@ -1,14 +1,17 @@
-
-
 nav {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 20px 15px -15px darkgray;
-ul {
-  list-style: none;
+  align-items: center;
+  min-height: 7vh;
+  flex-wrap: wrap;
+  img {
+  max-width: 9%;
+  }
+  ul {
   display: flex;
-  li {
-    padding-right: 30px;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  padding-bottom: 0.3rem;
     a {
      font-family: $secondaryFont;
      font-weight: 700;
@@ -16,5 +19,4 @@ ul {
      text-decoration: none;
     }
   }
-}
 }
