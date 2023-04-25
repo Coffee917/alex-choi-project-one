@@ -631,7 +631,7 @@ button {
   margin-top: 6rem;
 }
 .contact .wrapper .contactInfo {
-  flex: 1 2 40%;
+  flex-basis: calc(40% - 3rem);
   align-self: center;
 }
 .contact .wrapper .contactInfo .contactBox {
@@ -657,20 +657,22 @@ button {
 }
 .contact .wrapper .contactUs {
   display: flex;
-  flex: 0 1 45%;
+  flex-basis: calc(50% - 3rem);
+  flex-wrap: wrap;
+  flex: 0 1 60%;
   border: 0.1rem solid rgb(238, 238, 238);
   padding: 1.5rem;
   gap: 1rem;
 }
-.contact .wrapper .contactUs form {
-  flex-basis: calc(50% - 1.5rem);
-}
 .contact .wrapper .contactUs input {
   min-height: 2.5rem;
-  min-width: 13.4rem;
+  min-width: 13rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .contact .wrapper .contactUs #subject {
-  max-width: 65ch;
+  width: 28.2rem;
 }
 .contact .wrapper .formButton {
   width: 100%;

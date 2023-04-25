@@ -65,9 +65,8 @@ button {
     display: flex;
     gap: 3rem;
     margin-top: 6rem;
-
     .contactInfo {
-      flex: 1 2 40%;
+      flex-basis: calc(40% - 3rem);
       align-self: center;
       .contactBox {
         padding: 1.5rem 0 1.5rem 2.5rem;
@@ -86,19 +85,21 @@ button {
     }
     .contactUs {
       display: flex;
-      flex: 0 1 45%;
+      flex-basis: calc(50% - 3rem);
+      flex-wrap: wrap;
+      flex: 0 1 60%;
       border: $greyBorder;
       padding: 1.5rem;
       gap: 1rem;
-      form {
-        flex-basis: calc(50% - 1.5rem);
-      }
         input {
           min-height: 2.5rem;
-          min-width: 13.4rem;
+          min-width: 13rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
         }
         #subject {
-          max-width: 65ch;
+          width: 28.2rem;
         }
       }
       .formButton{
