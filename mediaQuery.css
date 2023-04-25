@@ -1,20 +1,19 @@
 @media (min-width: 320px) and (max-width: 1000px) {
-  .noBackground {
-    display: none;
-  }
-  ul {
-    flex-wrap: nowrap;
-  }
-  .heroContent {
-    background-size: cover;
-  }
-  .about {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .wrapper {
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+  nav ul {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .noBackground {
+    display: none;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
   }
   .newsBox,
   .footerBox,
@@ -23,16 +22,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, p, .vegText, .price {
     text-align: center;
   }
-  .contactUs {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-basis: 100%;
+  .heroContent {
+    background-size: cover;
   }
-  .contactUs #subject {
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .gallery {
+    min-height: auto;
+    background-size: contain;
+  }
+  .imageGallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerBox {
+    gap: 1rem;
+  }
+  .Submit {
+    flex-direction: column;
+    padding: 0;
+  }
+  .Submit #subject {
     max-width: 25ch;
+  }
+  .Submit textarea {
+    max-width: 30ch;
   }
 }

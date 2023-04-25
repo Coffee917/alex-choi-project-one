@@ -1,46 +1,72 @@
 @media (min-width:320px) and (max-width:1000px){
-    .noBackground {
-      display: none;
-    }
-    ul {
-      flex-wrap: nowrap;
-    
+// GENERAL SECTION
+  .wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
-    
-    .heroContent {
-      background-size: cover;
-    }
+  nav ul {
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .noBackground {
+    display: none;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
 
-    .about {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+// GENERAL GROUPINGS
+.newsBox,
+.footerBox,
+.footerAbout,
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+h1, h2, h3, h4, p, .vegText, .price {
+  text-align: center;
+}
 
-    .wrapper {
-      flex-wrap: wrap;
-      margin: 0 auto;
-    }
+// HEADER SECTION
+  .heroContent {
+    background-size: cover;
+  }
 
-    .newsBox,
-    .footerBox,
-    .footerAbout,
-    .subscribe {
-      display: flex;
+// ABOUT SECTION
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+// GALLERY SECTION
+  .gallery {
+    min-height: auto;
+    background-size: contain;
+  }
+  .imageGallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+// FOOTER SECTION
+.footerBox {
+  gap: 1rem;
+}
+  .Submit {
       flex-direction: column;
-      align-items: center;
-    }
+      padding: 0;
 
-    h1, h2, h3, h4 {
-      text-align: center;
-    }
-    
-    .contactUs {
-      // display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      flex-basis: 100%;
       #subject {
         max-width: 25ch;
       }
+      textarea {
+        max-width: 30ch;
+      }
     }
 }
+
