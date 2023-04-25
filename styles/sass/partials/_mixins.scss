@@ -27,14 +27,20 @@
   // line-height: 3.5rem;
 }
 
-// BODY TEXT STYLES
+//TEXT STYLES
 @mixin bodyText($width) {
   color: $black;
   font-family: $secondaryFont;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: $width;
+}
+@mixin navText(){
+  font-family: $secondaryFont;
+  font-weight: 700;
+  color: $black;
+  text-decoration: none;
 }
 
 // BUTTON STYLES
@@ -42,8 +48,8 @@
   background-color: $green;
   color: $white;
   border-radius: 20px;
-  height: 2.5rem;
-  width: 7.3rem;
+  height: 2.8rem;
+  width: 7.8rem;
   font-family: $secondaryFont;
   font-weight: 700;
   font-size: 0.8rem;

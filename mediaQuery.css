@@ -1,0 +1,38 @@
+@media (min-width: 320px) and (max-width: 1000px) {
+  .noBackground {
+    display: none;
+  }
+  ul {
+    flex-wrap: nowrap;
+  }
+  .heroContent {
+    background-size: cover;
+  }
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .newsBox,
+  .footerBox,
+  .footerAbout,
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  .contactUs {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+  }
+  .contactUs #subject {
+    max-width: 25ch;
+  }
+}

@@ -4,7 +4,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 7vh;
-  flex-wrap: wrap;
 }
 nav img {
   max-width: 9%;
@@ -13,7 +12,6 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
-  padding-bottom: 0.3rem;
 }
 nav ul a {
   font-family: "Barlow", sans-serif;
@@ -23,7 +21,7 @@ nav ul a {
 }
 
 .heroContent {
-  background-image: url(../../assets/asset/header/background.png);
+  background-image: url(./assets/asset/header/background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-shadow: 0 -15px 30px -23px darkgray;
@@ -33,13 +31,13 @@ nav ul a {
 }
 .heroContent .wrapper {
   display: flex;
-  flex-wrap: wrap-reverse;
 }
 .heroContent .wrapper .textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 0 1 45%;
+  flex: 1 0 100%;
+  max-width: 30rem;
   margin: 0 auto;
 }
 .heroContent .wrapper .textContainer h1 {
@@ -51,7 +49,7 @@ nav ul a {
 .heroContent .wrapper .textContainer p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 50ch;
@@ -71,22 +69,16 @@ nav ul a {
   cursor: pointer;
 }
 .heroContent .wrapper .imageContainer {
-  flex: 0 1 55%;
-  margin: 0 auto;
-}
-.heroContent .wrapper .imageContainer img {
-  max-width: 100%;
+  flex: 2 1 100%;
 }
 
 .wrapper .about {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap-reverse;
   gap: 5rem;
   margin: 6rem auto 14rem;
 }
 .wrapper .about .textContainer {
-  flex-basis: calc(50% - 8.5rem);
+  flex-basis: 100%;
 }
 .wrapper .about .textContainer h2 {
   font-family: "Lora", sans-serif;
@@ -103,7 +95,7 @@ nav ul a {
 .wrapper .about .textContainer p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 50ch;
@@ -126,12 +118,12 @@ nav ul a {
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: 1px;
-  align-self: flex-end;
+  align-self: flex-start;
   background-color: rgb(87, 177, 37);
   border-radius: 25px;
   color: #fff;
-  flex-basis: calc(50% - 8.5rem);
-  padding: 4rem 1rem 4rem 2.5rem;
+  flex-basis: 100%;
+  padding: 4rem 3.532rem 4rem 2.5rem;
   margin: 0 auto;
 }
 
@@ -147,12 +139,11 @@ nav ul a {
   font-size: 1.4rem;
   font-weight: 900;
   letter-spacing: 1px;
-  margin-top: 1rem;
 }
 .productHeader p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 60ch;
@@ -165,7 +156,7 @@ nav ul a {
 }
 .veggie .vegBox {
   flex-direction: column;
-  flex: 1 1 20%;
+  flex: 1 0 20%;
 }
 .veggie img {
   max-width: 100%;
@@ -183,7 +174,7 @@ nav ul a {
 .veggie p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: auto;
@@ -191,7 +182,7 @@ nav ul a {
 .veggie .price {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 100%;
@@ -201,8 +192,7 @@ nav ul a {
 .veggie .price span {
   text-decoration: line-through;
 }
-
-button {
+.veggie button {
   background-color: #207200;
   color: #fff;
   border-radius: 20px;
@@ -217,7 +207,7 @@ button {
 }
 
 .gallery {
-  background-image: url(../../assets/asset/grass.jpg);
+  background-image: url(./assets/asset/grass.jpg);
   background-size: 100% 70%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -240,7 +230,7 @@ button {
 .gallery .galleryHeader p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 55ch;
@@ -249,7 +239,6 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  list-style: none;
   gap: 1.1rem;
 }
 .gallery .galleryHeader .galleryButtons button {
@@ -266,11 +255,10 @@ button {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   width: fit-content;
-  padding: 0 1rem;
+  padding-inline: 1rem;
   position: relative;
 }
 .gallery .imageGallery {
-  list-style: none;
   padding-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -283,18 +271,14 @@ button {
 .gallery .imageGallery .bigPic {
   flex-basis: calc(50% - 0.2rem);
 }
-.gallery .imageGallery img {
-  width: 100%;
-}
 
 .load {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0 5rem;
+  padding-block: 5rem;
 }
 .load button {
-  position: relative;
   background-color: #207200;
   color: #fff;
   border-radius: 20px;
@@ -325,13 +309,12 @@ button {
   font-weight: 900;
   letter-spacing: 1px;
   color: #fff;
-  margin-top: 5rem;
-  margin-bottom: 0.5rem;
+  margin-block: 5rem 0.5rem;
 }
 .news .newsHeader p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 75ch;
@@ -340,7 +323,6 @@ button {
 }
 .news .newsBox {
   display: flex;
-  flex-wrap: wrap;
   background-color: #207200;
   gap: 1.6rem;
 }
@@ -349,17 +331,11 @@ button {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.1rem 1.1rem 2rem 1.21rem;
   flex-basis: calc(33% - 2.9rem);
 }
 .news .newsBox .newsContainer .imageContainer {
   border-radius: 5px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.news .newsBox .newsContainer .imageContainer img {
-  width: 100%;
 }
 .news .newsBox .newsContainer .textContainer {
   display: flex;
@@ -367,16 +343,17 @@ button {
 }
 .news .newsBox .newsContainer .textContainer h3 {
   font-family: "Lora", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 1px;
-  color: #1A2428;
+  line-height: 2rem;
   text-align: left;
+  margin-top: 1rem;
 }
 .news .newsBox .newsContainer .textContainer p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: auto;
@@ -387,8 +364,8 @@ button {
   background-color: #207200;
   color: #fff;
   border-radius: 20px;
-  height: 2.5rem;
-  width: 7.3rem;
+  height: 2.8rem;
+  width: 7.8rem;
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
@@ -398,17 +375,17 @@ button {
 }
 
 footer {
-  background-image: url(../../assets/asset/cow.png);
+  background-image: url(./assets/asset/cow.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  padding: 5rem 0 0 0;
+  padding-top: 5rem;
 }
 
 .footerBox {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 .footerAbout {
@@ -418,7 +395,7 @@ footer {
 .footerAbout p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 4cw;
@@ -426,10 +403,7 @@ footer {
 
 .icons {
   display: flex;
-  list-style: none;
-  gap: 0.9rem;
-  padding: 0;
-  margin: 0;
+  gap: 1.2rem;
 }
 .icons li {
   display: flex;
@@ -456,22 +430,20 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   padding-top: 1.2rem;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
-.links nav ul a {
+.links nav a {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 3cw;
-  text-decoration: none;
-  margin: 0;
 }
 
 .recentProducts {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   flex-basis: calc(33% - 3rem);
 }
 .recentProducts h3 {
@@ -483,7 +455,6 @@ footer {
 }
 .recentProducts .miniVeg {
   display: flex;
-  flex-wrap: wrap;
 }
 .recentProducts .miniVeg img {
   max-width: 4.5rem;
@@ -493,7 +464,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding-left: 0.7rem;
-  width: 0 auto;
 }
 .recentProducts .miniVeg .vegText h4 {
   font-family: "Lora", sans-serif;
@@ -505,7 +475,7 @@ footer {
 .recentProducts .miniVeg .vegText .price {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 100%;
@@ -529,7 +499,7 @@ footer {
 .subscribe p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: auto;
@@ -542,7 +512,7 @@ footer {
 .copyRight {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 100%;
@@ -554,6 +524,44 @@ footer {
   padding-bottom: 0.5rem;
 }
 
+@media (min-width: 320px) and (max-width: 1000px) {
+  .noBackground {
+    display: none;
+  }
+  ul {
+    flex-wrap: nowrap;
+  }
+  .heroContent {
+    background-size: cover;
+  }
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .newsBox,
+  .footerBox,
+  .footerAbout,
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  .contactUs {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+  }
+  .contactUs #subject {
+    max-width: 25ch;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -579,12 +587,21 @@ h1, h2, h3, h4 {
 h4 {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 100%;
   font-weight: 600;
   font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  position: relative;
 }
 
 .contactHeader {
@@ -612,10 +629,9 @@ h4 {
   display: flex;
   gap: 3rem;
   margin-top: 6rem;
-  flex-wrap: wrap;
 }
 .contact .wrapper .contactInfo {
-  flex-basis: calc(49% - 3rem);
+  flex: 1 2 40%;
   align-self: center;
 }
 .contact .wrapper .contactInfo .contactBox {
@@ -633,7 +649,7 @@ h4 {
 .contact .wrapper .contactInfo .contactBox p {
   color: #1A2428;
   font-family: "Barlow", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   max-width: 100%;
@@ -641,8 +657,7 @@ h4 {
 }
 .contact .wrapper .contactUs {
   display: flex;
-  flex-basis: calc(50% - 3rem);
-  flex-wrap: wrap;
+  flex: 0 1 45%;
   border: 0.1rem solid rgb(238, 238, 238);
   padding: 1.5rem;
   gap: 1rem;
@@ -655,7 +670,7 @@ h4 {
   min-width: 13.4rem;
 }
 .contact .wrapper .contactUs #subject {
-  width: 65ch;
+  max-width: 65ch;
 }
 .contact .wrapper .formButton {
   width: 100%;
@@ -667,8 +682,8 @@ h4 {
   background-color: #207200;
   color: #fff;
   border-radius: 20px;
-  height: 2.5rem;
-  width: 7.3rem;
+  height: 2.8rem;
+  width: 7.8rem;
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;

@@ -3,7 +3,6 @@
   @include flexCenter;
   h2 {
     @include header(1.4rem);
-    margin-top: 1rem;
   }
   p {
     @include bodyText(60ch);
@@ -17,7 +16,7 @@
   gap: 1.5rem;
   .vegBox {
     flex-direction: column;
-    flex: 1 1 20%;
+    flex: 1 0 20%;
     }
     img {
       max-width: 100%;
@@ -41,10 +40,8 @@
             text-decoration: line-through;
             }
          }
+         button {
+          @include miniButton;
+          position: absolute;
+         }
   }
-
-// BOTTOM BUTTON
-button {
-  @include miniButton;
-  position: absolute;
-}
