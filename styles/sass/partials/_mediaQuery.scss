@@ -10,9 +10,6 @@
     justify-content: center;
     gap: 1rem;
   }
-  .noBackground {
-    display: none;
-  }
   .buttons {
     display: flex;
     justify-content: center;
@@ -35,6 +32,7 @@ h1, h2, h3, h4, p, .vegText, .price {
 // HEADER SECTION
   .heroContent {
     background-size: cover;
+    align-items: unset;
   }
 
 // ABOUT SECTION
@@ -44,6 +42,10 @@ h1, h2, h3, h4, p, .vegText, .price {
     margin-bottom: 0;
   }
 
+// PRODUCT SECTION
+  .vegBox {
+    flex-basis: 50%;
+  }
 // GALLERY SECTION
   .gallery {
     min-height: auto;

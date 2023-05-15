@@ -6,7 +6,8 @@ nav {
   min-height: 7vh;
 }
 nav img {
-  max-width: 9%;
+  max-width: 25%;
+  max-height: 5%;
 }
 nav ul {
   display: flex;
@@ -36,7 +37,6 @@ nav ul a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 0 100%;
   max-width: 30rem;
   margin: 0 auto;
 }
@@ -67,9 +67,6 @@ nav ul a {
   font-size: 0.8rem;
   border: none;
   cursor: pointer;
-}
-.heroContent .wrapper .imageContainer {
-  flex: 2 1 100%;
 }
 
 .wrapper .about {
@@ -153,10 +150,10 @@ nav ul a {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: center;
 }
 .veggie .vegBox {
-  flex-direction: column;
-  flex: 1 0 20%;
+  flex-basis: 20%;
 }
 .veggie img {
   max-width: 100%;
@@ -405,10 +402,7 @@ footer {
   display: flex;
   gap: 1.2rem;
 }
-.icons li {
-  display: flex;
-}
-.icons li img {
+.icons img {
   width: 0.9rem;
   height: 0.9rem;
   border-radius: 100%;
@@ -535,9 +529,6 @@ footer {
     justify-content: center;
     gap: 1rem;
   }
-  .noBackground {
-    display: none;
-  }
   .buttons {
     display: flex;
     justify-content: center;
@@ -556,11 +547,15 @@ footer {
   }
   .heroContent {
     background-size: cover;
+    align-items: unset;
   }
   .about {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 0;
+  }
+  .vegBox {
+    flex-basis: 50%;
   }
   .gallery {
     min-height: auto;
